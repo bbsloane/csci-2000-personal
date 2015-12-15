@@ -4,7 +4,8 @@
 # except the two header lines?
 # Enter the relevant Unix command(s) used below.
 
-
+grep 100* classlist.csv
+(will print out everything that begins with 100 - which is the entire list besides the two header lines)
 
 
 # part (b)
@@ -13,7 +14,8 @@
 # Enter the relevant Unix command(s) used below as well as the number
 # of students in the list.
 
-
+grep 100* | wc -l classlist.csv
+(will count the number of lines in file and since there is only one student per line, it will give you the number of students in the list)
 
 
 # part (c)
@@ -24,7 +26,9 @@
 # Enter the relevant Unix command(s) used below as well as the names
 # of the first and last students in the new list.
 
-
+sort -name classlist.csv
+First: Adam Holte
+Last: Zenia Mowner
 
 
 # part (d)
